@@ -20,9 +20,10 @@ import (
 	"time"                 // 时间：超时控制
 
 	"github.com/bsm/redislock" // Redis 分布式锁
-	"go.uber.org/zap"          // Zap 日志
-	"gorm.io/driver/mysql"     // GORM MySQL 驱动
-	"gorm.io/gorm"             // ORM 数据库操作库
+	"github.com/redis/go-redis/v9"
+	"go.uber.org/zap"      // Zap 日志
+	"gorm.io/driver/mysql" // GORM MySQL 驱动
+	"gorm.io/gorm"         // ORM 数据库操作库
 )
 
 // main：Go 程序唯一入口函数，程序启动后第一个执行的函数
