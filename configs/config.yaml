@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  mode: release # debug / release
+  read_timeout: 5
+  write_timeout: 5
+  idle_timeout: 5
+
+mysql:
+  dsn: "root:password@tcp(127.0.0.1:3306)/chat_db?charset=utf8mb4&parseTime=True&loc=Local"
+  max_open_conns: 20
+  max_idle_conns: 10
+
+redis:
+  addr: "127.0.0.1:6379"
+  password: ""
+  db: 0
+
+rocketmq:
+  name_server: "127.0.0.1:9876"
+  group: "chat-group"
+  topic: "chat-p2p-topic"
+
+app:
+  server_id: "server-01" # 每台部署机器修改为唯一ID，如 server-01, server-02
+  jwt_secret: "your-production-jwt-secret-key"

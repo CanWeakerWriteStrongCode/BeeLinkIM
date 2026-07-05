@@ -1,0 +1,9 @@
+# 忽略文件
+.git
+.gitignore
+*.md
+*.yaml
+*.yml
+!configs/config.yaml
+logs/
+tmp/
